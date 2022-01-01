@@ -1,0 +1,7 @@
+<?php
+require 'includes/connect.php';
+session_start();
+if(!isset($_SESSION["email"])){
+header("Location: home.php");
+exit(); }
+?>
